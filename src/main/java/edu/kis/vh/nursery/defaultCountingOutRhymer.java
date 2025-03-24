@@ -2,16 +2,28 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    protected static final int SIZE = 12;
+    private static final int SIZE = 12;
     private static final int METHOD_ERR = -1;
     private static final int ARR_EMPTY = -1;
     private final int[] numbers = new int[SIZE];
+
+    public static int getSIZE() {
+        return SIZE;
+    }
+
+    public static int getMethodErr() {
+        return METHOD_ERR;
+    }
+
+    public static int getArrEmpty() {
+        return ARR_EMPTY;
+    }
 
     public int getTotal() {
         return total;
     }
 
-    protected int total = ARR_EMPTY;
+    private int total = ARR_EMPTY;
 
     public void countIn(int in) {
         if (!isFull())
@@ -38,4 +50,11 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public int[] getNumbers() {
+        return numbers;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }
