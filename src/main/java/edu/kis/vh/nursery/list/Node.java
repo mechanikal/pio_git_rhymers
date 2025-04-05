@@ -1,7 +1,8 @@
 package edu.kis.vh.nursery.list;
 
 /**
- * basic class used in list class
+ * Basic class used in double-linked list class to represent a single node
+ * Contains value as int and references to previous and next nodes
  */
 public class Node {
 
@@ -9,37 +10,52 @@ public class Node {
     private Node prev;
     private Node next;
 
+    /**
+     * Creates a node with value given by argument
+     * 
+     * @param i value of the node
+     */
     public Node(int i) {
         value = i;
     }
 
     /**
-     * getter for current node value
+     * Getter for current node value
+     * 
+     * @return node value
      */
     public int getValue() {
         return value;
     }
 
     /**
-     * returns node set as previous
+     * Returns node set as previous
+     * 
+     * @return previous node
      */
     public Node getPrev() {
         return prev;
     }
     /**
-     * sets node as previous
+     * Sets given node as previous
+     * 
+     * @param node to be set as prev
      */
     public void setPrev(Node prev) {
         this.prev = prev;
     }
     /**
-     * returns node set as next
+     * Returns node set as next
+     * 
+     * @return next node
      */
     public Node getNext() {
         return next;
     }
     /**
-     * returns node set as next
+     * Sets given node as next
+     * 
+     * @param node to be set as next
      */
     public void setNext(Node next) {
         this.next = next;
