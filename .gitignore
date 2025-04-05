@@ -1,0 +1,6 @@
+# Pliki i foldery do wykluczenia
+*.log
+*.tmp
+target/
+.idea/
+.vscode/
